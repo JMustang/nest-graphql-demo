@@ -9,7 +9,10 @@
 ## Commands
 
 ```bash
-- npm install @nestjs/graphql graphql-tools graphql apollo-server-express
+# npm install @nestjs/graphql graphql-tools graphql apollo-server-express
+
+
+npm i --save @nestjs/graphql @nestjs/apollo apollo-server-express graphql
 ```
 
 
