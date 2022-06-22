@@ -27,6 +27,14 @@ nest g resolver modules-name
 
 ### app.module.ts
 
+adicionar esse import no **app.module.ts**
+
+```ts
+ GraphQLModule.forRoot({
+      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+ })
+```
+
 ```typescript
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
