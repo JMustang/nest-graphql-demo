@@ -12,9 +12,6 @@ import { PetsModule } from './pets/pets.module';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'schema.gql',)
     }),
-    // GraphQLModule.forRoot({
-    //   autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
-    // }),
     PetsModule],
   controllers: [AppController],
   providers: [AppService],

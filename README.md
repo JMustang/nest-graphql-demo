@@ -15,6 +15,10 @@
 npm i --save @nestjs/graphql @nestjs/apollo apollo-server-express graphql
 ```
 
+```bash
+npm install @nestjs/typeorm 
+```
+
 
 ```bash
 nest g modules modules-name
