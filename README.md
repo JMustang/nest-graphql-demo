@@ -16,7 +16,7 @@ npm i --save @nestjs/graphql @nestjs/apollo apollo-server-express graphql
 ```
 
 ```bash
-npm install @nestjs/typeorm 
+npm install @nestjs/typeorm sqlite3
 ```
 
 
