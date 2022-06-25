@@ -8,11 +8,7 @@ export class PetsService {
   constructor(@InjectRepository(Pet) private petRepository: Repository<Pet>) { }
 
   async findAll(): Promise<Pet[]> {
-    const pet = new Pet();
-    pet.id = 1;
-    pet.name = 'Mamba';
-
-    return [pet]
+    return this.petRepository.find() // [SQL] => SELECT * from Pet
 
   }
 }
