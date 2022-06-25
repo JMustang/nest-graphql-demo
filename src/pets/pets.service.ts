@@ -1,14 +1,14 @@
 import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
 import { Pet } from './pet.entity';
 
 @Injectable()
 export class PetsService {
-  async findAll(): Promise<Pet[]> {
-    const pet = new Pet();
-    pet.id = 1;
-    pet.name = 'Mamba';
+  constructor(@InjectRepository(Pet) private petRepository: Repository<Pet>) { }
 
-    return [pet]
+  async findAll(): Promise<Pet[]> {
+    return this.petRepository.find() // [SQL] => SELECT * from Pet
 
   }
 }
