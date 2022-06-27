@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
+import { createPetInput } from './dto/create-pet.input';
 import { Pet } from './pet.entity';
 
 @Injectable()
@@ -10,7 +11,7 @@ export class PetsService {
 
 
   // newPet = new Pet(); new.name = input.name
-  createPet(createPetInput): Promise<Pet> {
+  createPet(createPetInput: createPetInput): Promise<Pet> {
     const newPet = this.petsRepository.create(createPetInput);
 
     return this.petsRepository.save(newPet); // insert
