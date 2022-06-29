@@ -33,6 +33,10 @@ nest g service modules-name
 ```bash
 nest g resolver modules-name
 ```
+```bash
+npm install class-validator class-transformer
+
+```
 
 ### app.module.ts
 
