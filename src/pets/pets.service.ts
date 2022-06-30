@@ -21,4 +21,8 @@ export class PetsService {
     return this.petsRepository.find() // [SQL] => SELECT * from Pet
 
   }
+
+  findOne(id): Promise<Pet> {
+    return this.petsRepository.findOneOrFail(id);
+  }
 }
