@@ -29,6 +29,12 @@ nest g service modules-name
 ```
 
 ```bash
+nest g resource owners
+
+```
+
+
+```bash
 nest g resolver modules-name
 ```
 ```bash

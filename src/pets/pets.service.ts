@@ -23,6 +23,6 @@ export class PetsService {
   }
 
   findOne(id): Promise<Pet> {
-    return this.petsRepository.findOneOrFail(id);
+    return this.petsRepository.findOneOrFail(id)
   }
 }
